@@ -1,0 +1,52 @@
+package circleapp;
+
+/**
+ * Name: "Hari" Palla
+ * 
+ * Student ID:3898171
+ * 
+ * Program: CircleApp.java
+ * 
+ * Date: May 28,2015
+ * 
+ * Description: "Calculates area of circle " and  display to screen.
+ */
+
+public class CircleApp {
+
+    public static void main(String[] args) {
+
+
+        double radius = 10;
+        double area;
+        
+        
+        if (radius > 0) {
+
+            area = calcArea(radius);
+
+            System.out.println("A circle with radius " + radius
+                    + " has an area of " + area);
+        } 
+        else {
+            System.out.println("A circle with radius " + radius
+                    + " is invalid. ");
+        }
+
+    }
+
+    public static double calcArea(double r) {
+        final double PI = 3.14;
+        return PI * r * r;
+    }
+}
+
+
+run:
+A circle with radius 10.0 has an area of 314.0
+BUILD SUCCESSFUL (total time: 2 seconds)
+
+run:
+A circle with radius -10.0 is invalid. 
+BUILD SUCCESSFUL (total time: 1 second)
+

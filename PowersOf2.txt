@@ -1,0 +1,70 @@
+package powersof2;
+
+import java.util.Scanner;
+
+/**
+ * Name: "Hari" Palla
+ *
+ * Student ID:3898171
+ *
+ * Program: PowersOf2.java
+ *
+ * Date: June 4,2015
+ *
+ * Description: "Calculates Power of 2 " and display to screen.
+ */
+
+public class PowersOf2 {
+
+    public static void main(String[] args) {
+
+
+
+        System.out.print("Please enter the highest power of 2: ");
+
+        Scanner console = new Scanner(System.in);
+
+        int highest = console.nextInt();
+
+
+        if (highest >= 0) {
+
+            printPowersOf2(highest);
+        } 
+        
+        else {
+            
+            System.out.println(highest + " is not a valid power");
+        }
+
+
+    }
+
+    
+    public static void printPowersOf2(int a) {
+
+
+        for (int i = 0; i <= a; i++) {
+
+            System.out.print(Math.pow(2, i) + " ");
+        }
+        
+        System.out.println();
+    }
+}
+
+
+run:
+Please enter the highest power of 2: 4
+1.0 2.0 4.0 8.0 16.0 
+BUILD SUCCESSFUL (total time: 12 seconds)
+
+run:
+Please enter the highest power of 2: -3
+-3 is not a valid power. 
+BUILD SUCCESSFUL (total time: 3 seconds)
+
+run:
+Please enter the highest power of 2: 0
+1.0 
+BUILD SUCCESSFUL (total time: 3 seconds)
