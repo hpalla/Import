@@ -34,6 +34,7 @@ public class CircleApp {
         }
 
     }
+        /More code is needed for this app
 
     public static double calcArea(double r) {
         final double PI = 3.14;
