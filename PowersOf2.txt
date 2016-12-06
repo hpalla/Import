@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * Program: PowersOf2.java
  *
- * Date: November 6,2015
+ * Date: November 10,2015
  *
  * Description: "Calculates Power of 2 " and display to screen.
  */
