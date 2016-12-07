@@ -1,0 +1,17 @@
+[user]
+	name = Hari
+	email = hari.babu20@gmail.com
+	name = =
+	name = hari
+	email = hari.babu209@gmail.com
+[core]
+	autocrlf = true
+[diff]
+tool = bc4
+[difftool "bc4"]
+cmd = \"c:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+tool = bc4
+[mergetool "bc4"]
+cmd = \"c:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+trustExitCode = true
